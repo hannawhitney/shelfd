@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classes from "./SignUp.module.css";
+import classes from "./Signup.module.css";
 import { useNavigate } from "react-router-dom";
 
 import { useUser } from "../context/UserContext";
