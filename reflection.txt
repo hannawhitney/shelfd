@@ -1,0 +1,29 @@
+                                                        Shelf’d project reflection
+
+	Creating Shelf’d was a unique experience that was both fun and challenging. Creating a site that was based around my favorite subject matter, 
+    similar to an app I already use, helped me better appreciate the hard work that goes into the tech I use every day. While many of the concepts 
+    used were topics that we discussed and practiced in this course, challenges still arose during the development process. Although I ran into issues 
+    and had to challenge myself as a developer, I was able to complete the Shelf’d site with all of the features I had initially intended to have. 
+
+    A primary part of this project required that a user be able to login and successfully authenticate their account. Without the ability to sign in, a 
+    user cannot add books to their bookshelf, which is the whole purpose of the site. Authentication is not something I’ve worked with a lot, and my project 
+    didn’t exactly line up with the example of authentication that we had from the last lesson, considering it didn’t have a backend folder with the 
+    authentication logic. It was a struggle to find a simple way to create a working login and sign up process, and for the future this process could be 
+    greatly improved to provide better security. Through this process, I learned about using contexts to store user data across multiple pages, which was 
+    both difficult and fulfilling to complete. 
+
+	With the bookshelf being a primary feature for this site, it was important to make sure that we could not only display book information by using APIs 
+    like Google Books, but that we could also successfully store a user’s bookshelf in the database. It was at times difficult to ensure that newly created 
+    users had an empty array in the database that books could be added to, and to ensure that books were not added to an undefined user in the database. 
+    I also ran into concerns with book IDs being reused in the google books API, due to how volumes are stored in their system. This caused the book loaded 
+    on the “browse” page to not always match the book displayed in the book details page when querying by book ID. I spent a lot of my testing and debugging 
+    time on these areas.
+
+	For future improvements, I would like to offer a changing banner. At this time, I hard coded the banner information, because my site does not have multiple 
+    partners to work with or highlight. Instead, I hard coded highlight information and show one possible use for banner information. On other sites, banners 
+    can be used to display events, updates to the site, partnerships, or advertisements. Another improvement that could be made would be to have multiple shelves 
+    a user can add to, such as “read” or “want to read” rather than one big bookshelf. 
+
+	At the end of this project, I have come away with a better understanding of myself as a developer. From the patience it takes to properly debug your own code 
+    to the importance of how data is passed from one component to the next, creating a site from scratch has more than just technical lessons to learn. I feel that 
+    this process has made me a more well-rounded developer, and has demonstrated how much I enjoy creating something that I would value as a consumer. 

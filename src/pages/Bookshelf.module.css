@@ -1,0 +1,91 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+  font-family: var(--font-serif);
+}
+
+.loading,
+.empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+.bookgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.bookcard {
+  background-color: var(--color-surface);
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  color: var(--text-primary);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bookcard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.45);
+}
+
+.bookimage {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  object-fit: cover;
+  border: 1px solid var(--color-accent);
+}
+
+.bookTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  font-family: var(--font-serif);
+}
+
+.bookAuthors {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.seeMoreButton,
+.removeButton {
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-family: var(--font-sans);
+}
+
+.seeMoreButton {
+  background-color: var(--color-primary);
+  color: var(--color-onPrimary);
+}
+
+.removeButton {
+  background-color: var(--color-error);
+  color: var(--color-onError);
+}

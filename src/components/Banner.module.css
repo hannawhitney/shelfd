@@ -1,0 +1,57 @@
+.banner {
+  position: relative;
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: var(--color-surface); /* charcoal paper */
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 4px solid var(--color-accent); /* brass highlight */
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  background-image: url("../../public/paper.jpg");
+}
+
+.highlightImage {
+  justify-content: center;
+  display: flex;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 200%;
+  background: radial-gradient(
+    circle at center,
+    rgba(193, 154, 107, 0.35) 0%,
+    rgba(193, 154, 107, 0.15) 40%,
+    rgba(193, 154, 107, 0) 70%
+  );
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+}
+
+.text {
+  font-size: 1.15rem;
+  color: var(--color-primary);
+  line-height: 1.8;
+  font-family: var(--font-sans);
+}
