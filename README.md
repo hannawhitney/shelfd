@@ -1,16 +1,51 @@
-# React + Vite
+# Shelf’d
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Shelf’d is a personal bookshelf application built to help readers organize books, discover new titles, and keep track of their reading interests.
 
-Currently, two official plugins are available:
+I built this project because I have always loved reading and wanted to explore how software could improve the experience of finding and organizing books. Shelf’d gave me the opportunity to combine my interest in reading with my interest in building user-focused applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+* Search for books using external APIs
+* View book information and New York Times Best Seller data
+* Organize books into a personal digital bookshelf
+* Store user-generated content with Firebase
+* Provide a simple interface for exploring and managing books
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies
 
-## Expanding the ESLint configuration
+* React
+* JavaScript
+* HTML/CSS
+* Firebase
+* External APIs
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Development Highlights
+
+While building Shelf’d, I focused on creating a smooth user experience while strengthening my understanding of full-stack development.
+
+Some of the key areas I worked on include:
+
+* Designing NoSQL data structures to support user bookshelf data
+* Integrating external APIs to retrieve and display book information
+* Implementing Firebase for data storage and real-time updates
+* Building reusable React components to create a maintainable frontend
+
+## What I Learned
+
+Shelf’d helped me better understand the connection between technical decisions and user experience. Building an application around something I personally enjoy reinforced the importance of creating software that solves a real problem for its users.
+
+## Future Improvements
+
+Some features I would like to add in the future:
+
+* Personalized recommendations
+* Reading progress tracking
+* User reviews and sharing features
+* Additional insights into reading habits
+
+
+## Contact
+
+Hanna Whitney
+GitHub: github.com/hannawhitney
