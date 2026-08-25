@@ -1,6 +1,6 @@
 # Shelf’d
 
-Shelf’d is a personal bookshelf application built to help readers organize books, discover new titles, and keep track of their reading interests.
+Shelf’d is a personal bookshelf application built to help readers search for books, discover new titles, and keep track of their reading interests.
 
 I built this project because I have always loved reading and wanted to explore how software could improve the experience of finding and organizing books. Shelf’d gave me the opportunity to combine my interest in reading with my interest in building user-focused applications.
 
