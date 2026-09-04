@@ -16,11 +16,11 @@ function BookshelfPage() {
         const bookDetails = await Promise.all(
           user.bookshelf.map(async (bookId) => {
             const res = await fetch(
-              `https://www.googleapis.com/books/v1/volumes/${bookId}`
+              `https://www.googleapis.com/books/v1/volumes/${bookId}?key=AIzaSyApg_xea7hfSRNTO0_P3Pd9guYX380E_JM`,
             );
             const data = await res.json();
             return data;
-          })
+          }),
         );
         setBooks(bookDetails.filter((b) => b && b.volumeInfo));
       } catch (err) {
@@ -43,7 +43,7 @@ function BookshelfPage() {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ bookshelf: updatedBookshelf }),
-        }
+        },
       );
 
       if (!response.ok) throw new Error("Failed to update bookshelf");
