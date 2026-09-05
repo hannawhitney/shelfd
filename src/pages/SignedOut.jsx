@@ -9,7 +9,7 @@ function SignedOut() {
       </Link>
       <div className={classes.imageContainer}>
         <img
-          src="public/signed-out.png"
+          src="/signed-out.png"
           height="400"
           width="400"
           className={classes.image}
