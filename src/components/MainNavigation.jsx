@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import logo from "../../public/logo.jpg";
+import logo from "/logo.jpg";
 import { useUser } from "../context/UserContext";
 import { useNavigate } from "react-router-dom";
 

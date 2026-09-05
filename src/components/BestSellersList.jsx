@@ -12,7 +12,7 @@ function BestSellersList() {
   useEffect(() => {
     axios
       .get(
-        "https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=LeMpchYQaG1q3IVxFonWtTusbevjKeD4"
+        "https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=LeMpchYQaG1q3IVxFonWtTusbevjKeD4",
       )
       .then((res) => setBestBooks(res.data.results.books))
       .catch((err) => setError(err.message));
@@ -35,7 +35,7 @@ function BestSellersList() {
       >
         {bestBooks.map((book) => (
           <Carousel.Item
-            key={book.primary_isbn10}
+            key={book.primary_isbn13}
             className={classes.carouselItem}
           >
             <img
