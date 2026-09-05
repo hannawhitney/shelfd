@@ -4,10 +4,14 @@ import classes from "./Home.module.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { useUser } from "../context/UserContext";
+
 
 function HomePage() {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
+  const { user } = useUser();
+
 
   const handleSearch = () => {
     if (!query.trim()) return;
@@ -45,16 +49,18 @@ function HomePage() {
 
       <BestSellersList />
 
-      <section className={classes.ctaSection}>
-        <h2>Start your personal bookshelf today!</h2>
-        <p>
-          Sign up to save your favorite books, track your reading, and get
-          recommendations tailored to you.
-        </p>
-        <Link to="/signup" className={classes.ctaButton}>
-          Sign Up
-        </Link>
-      </section>
+      {!user && (
+        <section className={classes.ctaSection}>
+          <h2>Start your personal bookshelf today!</h2>
+          <p>
+            Sign up to save your favorite books, track your reading, and get
+            recommendations tailored to you.
+          </p>
+          <Link to="/signup" className={classes.ctaButton}>
+            Sign Up
+          </Link>
+        </section>
+      )}
     </div>
   );
 }

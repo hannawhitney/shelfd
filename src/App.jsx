@@ -14,6 +14,7 @@ import { articlesLoader } from "./pages/News";
 import { action as authAction } from "./pages/Login";
 import { UserProvider } from "./context/UserContext";
 import WelcomePage from "./pages/Welcome";
+import SignedOut from "./pages/SignedOut";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,7 @@ const router = createBrowserRouter([
       { path: "/login", element: <LoginPage />, action: authAction },
       { path: "/:bookId", element: <BookDetails />, loader: bookDetailLoader },
       { path: "/welcome", element: <WelcomePage /> },
+      { path: "/signedout", element: <SignedOut /> },
     ],
   },
 ]);

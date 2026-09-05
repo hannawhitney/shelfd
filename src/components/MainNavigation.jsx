@@ -4,6 +4,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import logo from "/logo.jpg";
 import { useUser } from "../context/UserContext";
 import { useNavigate } from "react-router-dom";
+import SignedOut from "../pages/SignedOut";
 
 function MainNavigation() {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ function MainNavigation() {
 
   const handleSignOut = () => {
     setUser(null);
-    navigate("/");
+    navigate("/signedout");
   };
 
   return (

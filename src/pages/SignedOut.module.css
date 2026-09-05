@@ -1,0 +1,27 @@
+.backLink {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.backLink:hover {
+  color: #222;
+}
+
+.imageContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.image {
+  text-align: center;
+}
+
+.mainContainer {
+  background-color: #f8f4ef;
+}
