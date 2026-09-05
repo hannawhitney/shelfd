@@ -1,4 +1,4 @@
-import { json, useLoaderData } from "react-router-dom";
+import { json, redirect, useLoaderData } from "react-router-dom";
 import classes from "./BookDetails.module.css";
 import { useUser } from "../context/UserContext";
 import { useState } from "react";
@@ -12,7 +12,7 @@ function BookDetails() {
 
   async function addBookHandler() {
     if (!user) {
-      setMessage("You must be signed in to add books.");
+      location.replace("/login");
       return;
     }
 
@@ -35,7 +35,7 @@ function BookDetails() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({ bookshelf: updatedBookshelf }),
-        }
+        },
       );
 
       if (!response.ok) {
@@ -121,7 +121,7 @@ export async function bookDetailLoader({ params }) {
   const id = params.bookId;
 
   const response = await fetch(
-    `https://www.googleapis.com/books/v1/volumes?q=${id}&key=AIzaSyApg_xea7hfSRNTO0_P3Pd9guYX380E_JM`
+    `https://www.googleapis.com/books/v1/volumes?q=${id}&key=AIzaSyApg_xea7hfSRNTO0_P3Pd9guYX380E_JM`,
   );
 
   if (!response.ok) {
