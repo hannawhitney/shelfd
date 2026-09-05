@@ -2,7 +2,6 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import classes from "./BestSellersList.module.css";
-import { Link } from "react-router-dom";
 
 function BestSellersList() {
   const [bestBooks, setBestBooks] = useState([]);

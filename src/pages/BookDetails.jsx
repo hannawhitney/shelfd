@@ -1,4 +1,4 @@
-import { json, redirect, useLoaderData } from "react-router-dom";
+import { json, useLoaderData } from "react-router-dom";
 import classes from "./BookDetails.module.css";
 import { useUser } from "../context/UserContext";
 import { useState } from "react";

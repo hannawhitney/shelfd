@@ -1,51 +1,90 @@
 # Shelf’d
 
-Shelf’d is a personal bookshelf application built to help readers search for books, discover new titles, and keep track of their reading interests.
+Shelf’d is a personal bookshelf application built with React, Firebase, and external APIs.
 
-I built this project because I have always loved reading and wanted to explore how software could improve the experience of finding and organizing books. Shelf’d gave me the opportunity to combine my interest in reading with my interest in building user-focused applications.
+I built this project in 2025 as part of my software engineering education. We had a lot of freedom in choosing what we wanted to build, and because I love reading and use Goodreads regularly, I wanted to explore how an application like that might work behind the scenes.
 
-## Features
+My goal was to build an application from end to end: create and store user data, work with external APIs, and turn that data into a functioning React application.
 
-* Search for books using external APIs
-* View book information and New York Times Best Seller data
-* Organize books into a personal digital bookshelf
-* Store user-generated content with Firebase
-* Provide a simple interface for exploring and managing books
+## What It Does
 
-## Technologies
+Users can:
 
-* React
-* JavaScript
-* HTML/CSS
-* Firebase
-* External APIs
+- Search for books using the Google Books API
+- View book information and covers
+- Explore New York Times Best Seller data
+- Browse a selection of book-related news
+- Open individual articles and view the original published content
+- Create an account and log in
+- Add books to a personal digital bookshelf
+- Remove books from their bookshelf
 
-## Development Highlights
+The bookshelf stores the IDs of books a user has added. Those IDs are then used to retrieve the corresponding book information and display the books as individual cards.
 
-While building Shelf’d, I focused on creating a smooth user experience while strengthening my understanding of full-stack development.
+The news section follows a similar idea. Shelf’d stores the article information and uses the selected article's URL to load the original published content when the article is opened.
 
-Some of the key areas I worked on include:
+## Built With
 
-* Designing NoSQL data structures to support user bookshelf data
-* Integrating external APIs to retrieve and display book information
-* Implementing Firebase for data storage and real-time updates
-* Building reusable React components to create a maintainable frontend
+- React
+- JavaScript
+- HTML
+- CSS
+- Firebase
+- Axios
+- Google Books API
+- New York Times API
+
+## A Few Things I Worked On
+
+One of the main goals of Shelf’d was getting comfortable connecting different pieces of an application together.
+
+I worked with:
+
+- NoSQL data structures for user bookshelf data
+- External APIs for book and bestseller information
+- Firebase for storing application data
+- Axios for making HTTP requests
+- React Context for sharing the current user's state throughout the application
+- React Router for navigation and route-based data loading
+- Reusable React components for the frontend
+
+One issue I encountered was that some book identifiers were not specific enough, which could result in the wrong book or cover being returned. I traced the problem back to the way I was making the API lookup and made the identifier and request more specific.
+
+## Coming Back to Shelf’d
+
+After letting the project sit for a while, I recently started using it again and testing it from a user's perspective.
+
+Coming back to it with more experience has been useful because I can now look at some of the decisions I made in 2025 with a different perspective. I've already made several improvements based on that process, including:
+
+- Redirecting users to the login page when they try to add a book without being signed in
+- Removing the sign-up call to action when a user is already logged in
+- Making additional UI improvements based on how the application behaves during regular use
 
 ## What I Learned
 
-Shelf’d helped me better understand the connection between technical decisions and user experience. Building an application around something I personally enjoy reinforced the importance of creating software that solves a real problem for its users.
+Shelf’d gave me a better understanding of how the different parts of a web application fit together.
 
-## Future Improvements
+I learned how to take data from an external API, work with it inside a React application, store user-specific information, and use that information to determine what gets displayed to the user.
 
-Some features I would like to add in the future:
+Building the project around something I personally enjoy also made me more aware of the relationship between technical decisions and the experience of the person using the application.
 
-* Personalized recommendations
-* Reading progress tracking
-* User reviews and sharing features
-* Additional insights into reading habits
+## What I Would Work On Next
 
+Shelf’d was built primarily to demonstrate end-to-end development and API integration, so there are several areas I would revisit if I continued developing it.
 
-## Contact
+Some of those include:
 
-Hanna Whitney
+- More robust authentication and security
+- Pagination or incremental loading for larger sets of search results
+- Additional UI and accessibility improvements
+- Better loading and error states
+- Personalized recommendations
+- Reading progress tracking
+- Reviews and sharing features
+- Additional insights into reading habits
+
+## About Me
+
+I'm Hanna, a software engineer who enjoys building applications, working with data, and figuring out how all of the pieces of a system fit together.
+
 GitHub: github.com/hannawhitney
